@@ -97,7 +97,7 @@ If we need log odds ratios and standard errors, rather than simply Z scores, we 
               gamma.W=log(g1), # log odds ratios
               freq=freq, # reference haplotypes
           nrep=3)
-  betasim <- zsim / sqrt(vbetasim)
+  betasim <- zsim * sqrt(vbetasim)
 ```
 
 The simulated odds ratios should be distributed about g1:
